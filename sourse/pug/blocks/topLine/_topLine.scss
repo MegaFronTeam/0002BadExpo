@@ -1,7 +1,40 @@
 
 	// start .topLine
 	.topLine {
-		 
+	--sPT: #{rem(10)};
+	--sPB: #{rem(10)};
+	background-color: $cyan;
+	color: $white;
+	display: none;
+	@include media-breakpoint-up(sm) {
+		display: block;
+	}
+	&__row {
+		align-items: center;
+	}
+	p {
+		margin-bottom: 0;
+		font-weight: 700;
+		font-size: rem(14);
+	}
+	a {
+		font-size: rem(14);
+		font-weight: 700;
+		color: $white;
+		border-bottom: 1px solid transparent;
+		&:hover {
+			border-bottom-color: $white;
+			
+		}
+	}
+	&__wrap {
+		display: flex;
+		align-items: center;
+	}
+	.icon-location-dot-solid {
+		font-size: rem(14);
+		margin-right: rem(5);
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

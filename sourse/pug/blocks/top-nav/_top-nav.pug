@@ -21,8 +21,10 @@ mixin top-nav()
 	// start top-nav
 	+b.top-nav.block-with-lazy
 		.container
-			.row
-				.col.order-lg-0.order-last
+			+e.row.row
+				.col.col-lg-auto
+					+logo()
+				.col
 					.menu-mobile.menu-mobile--js
 						.menu-mobile__inner
 							+menu-toggle()

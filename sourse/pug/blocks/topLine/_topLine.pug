@@ -2,8 +2,13 @@ mixin topLine()
 	// start topLine
 	+b.topLine.section#topLine&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 topLine
-				
-			.row
+			+e.row.row
+				.col-auto
+					p 24-26 марта 2022
+				.col
+					+e.wrap
+						+icon('location-dot-solid')
+						p Москва, ИнфоПространство
+				.col-auto
+					a(href="tel:+74956907241") +7 (495) 690 72 41
 	// end topLine
