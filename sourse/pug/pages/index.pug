@@ -11,10 +11,14 @@ include ../blocks/sContact/_sContact.pug
 include ../blocks/sForm/_sForm.pug
 include ../blocks/sForm/_sForm.pug
 include ../blocks/footer/_footer.pug
+include ../blocks/sAbout/_sAbout.pug
+include ../blocks/sOurGoals/_sOurGoals.pug
+include ../blocks/sVideoWrap/_sVideoWrap.pug
+include ../blocks/sExhibitors/_sExhibitors.pug
 
 block variables
 	- let  mainPage= 'main-page' 
-	- let  bg= null
+	- let  bg= 'index.png'
 
 block title
 	- let  title= 'БАД-EXPO 24–26 марта 2022 — Международная специализированная выставка биологически активных добавок'
@@ -27,8 +31,11 @@ block pagecontent
 	+header()
 	+top-nav()
 	+headerBlock
-
-	+soc()
+	+sAbout()
+	+sOurGoals()
+	+sVideoWrap()
+	+sExhibitors()
+	//- +soc()
 	+sForm()
 	//- +sForm()
 	//- - let list = items[0].title

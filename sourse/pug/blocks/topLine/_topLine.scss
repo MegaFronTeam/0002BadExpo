@@ -1,16 +1,17 @@
 
 	// start .topLine
 	.topLine {
-	--sPT: #{rem(10)};
-	--sPB: #{rem(10)};
+	--sPT: #{rem(8)};
+	--sPB: #{rem(8)};
 	background-color: $cyan;
 	color: $white;
 	display: none;
-	@include media-breakpoint-up(sm) {
+	@include media-breakpoint-up(md) {
 		display: block;
 	}
 	&__row {
 		align-items: center;
+		--bs-gutter-x: #{rem(82)};
 	}
 	p {
 		margin-bottom: 0;
@@ -22,6 +23,7 @@
 		font-weight: 700;
 		color: $white;
 		border-bottom: 1px solid transparent;
+		padding-right: rem(10);
 		&:hover {
 			border-bottom-color: $white;
 			

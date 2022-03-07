@@ -363,6 +363,24 @@ function eventHandler() {
 	});
 	// modal window
 
+	const sExhibitors = new Swiper('.sExhibitors__slider--js', {
+		slidesPerView: 1,
+		spaceBetween: 10,
+		overflow: true,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		breakpoints: {
+			// when window width is >= 640px
+			640: {
+				slidesPerView: 3
+			},
+			992: {
+				slidesPerView: 4
+			}
+		}
+	});
 };
 if (document.readyState !== 'loading') {
 	eventHandler();

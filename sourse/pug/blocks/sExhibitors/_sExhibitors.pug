@@ -1,0 +1,20 @@
+mixin sExhibitors(data)
+	// start sExhibitors
+	+b.SECTION.sExhibitors.section#sExhibitors&attributes(attributes)
+		img(src="img/@2x/pills-5.png", alt="")
+		.container
+			+b.section-title.text-center
+				h2 Экспоненты
+			+e.slider-wrap
+				//- +e.wrap
+				+e.slider--js.swiper
+					.swiper-wrapper
+						mixin slide(i)
+							+e.slide.swiper-slide
+								img(src=`img/@2x/sExhibitors-slider-${i}.jpg`, alt="")
+								//- +pic(`sExhibitors-slider-${i}.png`, `bg`, 0)
+						- for(var i = 1; i < 47; i++)
+							+slide(i)
+					+arrow()
+			+e.BUTTON.btn.btn Подробнее
+	// end sExhibitors

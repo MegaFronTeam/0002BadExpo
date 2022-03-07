@@ -1,0 +1,48 @@
+// start .sOurGoals
+.sOurGoals {
+	--sPT: #{rem(28)};
+	--sPB: #{rem(22)};
+	@include media-breakpoint-up(lg) {
+		--sPT: #{rem(63)};
+		--sPB: #{rem(52)};
+	}
+	// --sTPB: ;
+	& > img {
+		object-fit: cover;
+	}
+	&__col {
+		margin-left: auto;
+	}
+	h2 {
+		margin-bottom: rem(20);
+		text-align: center;
+		@include media-breakpoint-up(lg) {
+			text-align-last: left;
+		}
+	}
+	.about-list {
+		li {
+			font-size: rem(16);
+			line-height: 1.2em;
+			@include media-breakpoint-up(lg) {
+				font-size: rem(24);
+			}
+			&:not(:last-child) {
+				margin-bottom: rem(15);
+			}
+		}
+		span {
+			background-color: #16C1F3 ;
+			&:before {
+				background-color: #f6c2cf;
+			}
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sOurGoals

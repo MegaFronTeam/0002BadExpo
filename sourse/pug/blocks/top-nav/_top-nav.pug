@@ -23,13 +23,17 @@ mixin top-nav()
 		.container
 			+e.row.row
 				.col.col-lg-auto
-					+logo()
+					//- +logo()
+					+e.A.logo(href="/") 
+						img(src="/img/svg/logo.svg", alt="")
 				.col
 					.menu-mobile.menu-mobile--js
 						.menu-mobile__inner
 							+menu-toggle()
 							+mnu()
-					
+				.col-auto.d-none.d-lg-block
+					button.btn.btn-primary Бронь стенда
+					button.btn.btn-primary Регистрация
 				.col-auto.d-lg-none
 					+menu-toggle()
 	// end top-nav
