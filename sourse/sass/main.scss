@@ -45,7 +45,7 @@ $output-bourbon-deprecation-warnings: false;
 // @import "./node_modules/bootstrap/scss/navbar";
 // @import "./node_modules/bootstrap/scss/card";
 // @import "./node_modules/bootstrap/scss/accordion";
-// @import "./node_modules/bootstrap/scss/breadcrumb";
+@import "./node_modules/bootstrap/scss/breadcrumb";
 // @import "./node_modules/bootstrap/scss/pagination";
 // @import "./node_modules/bootstrap/scss/badge";
 // @import "./node_modules/bootstrap/scss/alert";
@@ -69,14 +69,14 @@ $output-bourbon-deprecation-warnings: false;
 // scss-docs-end import-stack
 
 
-// .breadcrumb {
-// 	.active {
-// 		a {
-// 			// color: $breadcrumb-active-color;
-// 			pointer-events: none;
-// 		}
-// 	}
-// }
+.breadcrumb {
+	.active {
+		a {
+			// color: $breadcrumb-active-color;
+			pointer-events: none;
+		}
+	}
+}
 // @import "./node_modules/bootstrap/scss/pagination";
 
 // .pagination-wrapper ul {
@@ -117,6 +117,10 @@ $output-bourbon-deprecation-warnings: false;
 @import '../pug/blocks/sOurGoals/_sOurGoals.scss';
 @import '../pug/blocks/sVideoWrap/_sVideoWrap.scss';
 @import '../pug/blocks/sExhibitors/_sExhibitors.scss';
+@import '../pug/blocks/sReviews/_sReviews.scss';
+@import '../pug/blocks/sPlan/_sPlan.scss';
+@import '../pug/blocks/sPartners/_sPartners.scss';
+@import '../pug/blocks/sLocation/_sLocation.scss';
 
 @import "media"; // Всегда в конце
 

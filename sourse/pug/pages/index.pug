@@ -15,6 +15,10 @@ include ../blocks/sAbout/_sAbout.pug
 include ../blocks/sOurGoals/_sOurGoals.pug
 include ../blocks/sVideoWrap/_sVideoWrap.pug
 include ../blocks/sExhibitors/_sExhibitors.pug
+include ../blocks/sReviews/_sReviews.pug
+include ../blocks/sPlan/_sPlan.pug
+include ../blocks/sPartners/_sPartners.pug
+include ../blocks/sLocation/_sLocation.pug
 
 block variables
 	- let  mainPage= 'main-page' 
@@ -27,24 +31,28 @@ block pagecontent
 	//- +mob-mnu()
 	
 	
-	+topLine
 	+header()
-	+top-nav()
+		+topLine
+		+top-nav()
 	+headerBlock
 	+sAbout()
 	+sOurGoals()
 	+sVideoWrap()
 	+sExhibitors()
+	+sReviews()
+	+sPlan()
+	+sPartners()
+	+sLocation()
 	//- +soc()
-	+sForm()
+	//- +sForm()
 	//- +sForm()
 	//- - let list = items[0].title
 	//- p= list
-	.container
-		each item in items
-			li 
-				h2= item.title
-				p= item.text
+	//- .container
+	//- 	each item in items
+	//- 		li 
+	//- 			h2= item.title
+	//- 			p= item.text
 	//- +sContact()
 	
 	+footer()

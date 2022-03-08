@@ -1,8 +1,108 @@
 .footer {
-		
-	margin-top: auto;
-
-// 
+	padding-top: #{rem(20)};
+	padding-bottom: #{rem(20)};
+	background-color: rgba(45,45,45,1);
+	@include media-breakpoint-up(lg) {
+		padding-top: #{rem(48.8)};
+		padding-bottom: #{rem(46)};
+	}
+	.row {
+		--bs-gutter-y: var(--bs-gutter-x);
+	}
+	h3 {
+		color: $white;
+		margin-bottom: rem(36);
+	}
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-bottom: rem(27.6);
+		a {
+			color: $gray-600;
+			font-size: rem(15);
+			line-height: calc(19/15);
+			border-bottom: 1px solid transparent;
+			&:hover {
+				color: $white;
+				border-bottom-color: $white;
+			}
+			&:not(:last-child) {
+				margin-bottom: rem(26.553);
+			}
+		}
+	}
+	&__link {
+		display: flex;
+		.icon {
+			color: $white;
+			font-size: rem(16);
+			margin-right: rem(16);
+			min-width: rem(16);
+		}
+		a {
+			color: $white;
+		}
+		span {
+			color: $white;
+		}
+		&:not(:last-child) {
+			margin-bottom: rem(18);
+		}
+	}
+	&__content {
+		margin-bottom: rem(49);
+		p {
+			color: $white;
+			font-size: rem(14);
+			line-height: 1.5;
+			margin-bottom: 0;
+			font-weight: 700;
+			border-top: 1px solid $white;
+			padding-top: rem(20);
+		}
+	}
+	&__footerContent {
+		@include media-breakpoint-down(sm) {
+			text-align: center;
+		}
+		p {
+			color: $white;
+			margin-bottom: 0;
+			font-size: rem(12);
+			&:first-child {
+				font-size: rem(14);
+				line-height: 1.5;
+				font-weight: 700;
+				margin-bottom: rem(21.400);
+			}
+			&:last-child {
+				max-width: rem(486);
+				margin-left: auto;
+				margin-right: auto;
+			}
+			@include media-breakpoint-down(sm) {
+				text-align: center;
+			}
+			a {
+				color: $white;
+				font-size: rem(12);
+				border-bottom: 1px solid transparent;
+				&:hover {
+					border-bottom-color: $white;
+				}
+			}
+		}
+		& > a {
+			color: $white;
+			font-size: rem(18);
+			font-weight: 700;
+			border-bottom: 1px solid transparent;
+			&:hover {
+				border-bottom-color: $white;
+			}
+		}
+	}
 @include media-breakpoint-up(xl) {}
 
 @include media-breakpoint-up(lg) {}

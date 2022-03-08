@@ -18,6 +18,13 @@ mixin arrow()
 		+icon('chevron-right')
 //- /arrow for swiper-slider
 
+mixin arrow2()
+	.swiper-button-hand.swiper-button-hand-prev.swiper-button-prev
+		+icon('chevron-left-solid')
+	.swiper-button-hand.swiper-button-hand-next.swiper-button-next
+		+icon('chevron-right-solid')
+//- /arrow for swiper-slider
+
 mixin ie11()
 	//- modernizer and for ie11
 	 
@@ -41,3 +48,9 @@ mixin about-wrap(title, num, span)
 			p!= span
 		ul
 			block
+
+mixin page-head(title, ...lists)
+	+b.page-head
+		.container
+			block
+			h1!= title

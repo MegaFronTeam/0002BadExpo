@@ -1,0 +1,18 @@
+mixin sPartners(data)
+	// start sPartners
+	+b.SECTION.sPartners.section#sPartners&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Наши партнеры
+			+e.slider-wrap
+				//- +e.wrap
+				+e.slider--js.swiper
+					.swiper-wrapper
+						mixin slide(i)
+							+e.slide.swiper-slide
+								img(src=`img/@2x/sPartners-slider-${i}.jpg`, alt="")
+						- for(var i = 1; i < 12; i++)
+							+slide(i)
+					+arrow()
+			+e.BUTTON.btn.btn Подробнее
+	// end sPartners

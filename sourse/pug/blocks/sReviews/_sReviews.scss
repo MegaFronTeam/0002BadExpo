@@ -1,0 +1,97 @@
+// start .sReviews
+.sReviews {
+	--sPT: #{rem(25)};
+	--sPB: #{rem(25)};
+	// --sTPB: ;
+	@include media-breakpoint-up(lg) {
+		--sPT: #{rem(54.8)};
+		--sPB: #{rem(85.2)};
+	}
+	.section-title {
+		margin-bottom: rem(70);
+		@include media-breakpoint-up(lg) {
+			margin-bottom: rem(52);
+		}
+	}
+	&__col {
+		margin-left: auto;
+		max-width: 756px;
+		margin-right: rem(31);
+	}
+	&__slider {
+		@include media-breakpoint-down(lg) {
+			overflow: visible;
+		}
+	}
+	.swiper-wrapper {
+		@include media-breakpoint-up(lg) {
+			align-items: center;
+		}
+	}
+	&__slide-wrap {
+		background-color: $white;
+		padding: rem(21.600) rem(30) rem(24);
+		border: 1px solid #e6e6e6;
+		@include media-breakpoint-up(lg) {
+			padding: rem(21.600) rem(70) rem(24);
+		}
+		p {
+			display: inline;
+			font-size: rem(16);
+			line-height: 1.5;
+			margin-bottom: rem(6.4);
+			@include media-breakpoint-up(lg) {
+				font-size: rem(18);
+			}
+		}
+		a {
+			font-size: rem(16);
+			line-height: 1.5;
+			@include media-breakpoint-up(lg) {
+				font-size: rem(18);
+			}
+			&:not(:hover) {
+				color: $body-color;
+			}
+		}
+		span {
+			font-size: rem(18);
+			line-height: 1.5;
+			display: block;
+			text-align: right;
+		}
+	}
+	.swiper-button-hand {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		opacity: 1;
+		top: rem(-61);
+		bottom: auto;
+		@include media-breakpoint-up(lg) {
+			bottom: 0;
+			top: 0;
+		}
+		&-prev {
+			left: rem(10);
+		}
+		&-next {
+			right: rem(10);
+		}
+		&-disabled {
+		}
+		.icon {
+			font-size: rem(24);
+		}
+	}
+	.swiper-button-disabled {
+		opacity: 0;
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sReviews

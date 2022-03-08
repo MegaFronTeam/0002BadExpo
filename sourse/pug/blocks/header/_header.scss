@@ -1,7 +1,10 @@
 
 	// start .header
 	.header {
-		 
+	z-index: 10;
+	.top-nav {
+		background-color: $white;
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

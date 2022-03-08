@@ -1,0 +1,37 @@
+// start .sPlan
+.sPlan {
+	--sPT: #{rem(40)};
+	--sPB: #{rem(40)};
+	// --sTPB: ;
+	@include media-breakpoint-up(lg) {
+		--sPT: #{rem(80)};
+		--sPB: #{rem(40)};
+	}
+	.section-title {
+		margin-bottom: rem(20);
+	}
+	button {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		background-color: $primary;
+		font-size: rem(14);
+		padding: rem(10) rem(30);
+		@include media-breakpoint-up(lg) {
+			padding: rem(15) rem(30);
+		}
+		&:hover {
+			background-color: #86cdf5;
+		}
+	}
+	img {
+		width: 100%;
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sPlan

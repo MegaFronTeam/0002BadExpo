@@ -1,9 +1,42 @@
+mixin footer-list(title, ...links)
+	h3!= title
+	+e.wrap
+		each link in links
+			a(href="#")!= link
+
 mixin footer()
 	+b.FOOTER.footer
 		.container
 			.row
-				.col
-					
-				.col Footer
-				.col
-				.col-auto
+				.col-6.col-md-4.col-lg
+					+footer-list('Выставка', 'Каталоги выставки', 'Пост-релизы', 'Фоторепортажи', 'Аккредитация СМИ', 'Классификатор', 'Новости', 'Контакты')
+				.col-6.col-md-4.col-lg
+					+footer-list('БАД-EXPO весна’22', 'О выставке', 'Экспоненты', 'Программа', 'Пресс-релиз', 'Регистрационные баннеры', 'Время и место проведения')
+				.col-sm-6.col-md-4.col-lg
+					h3 Контакты
+					+e.wrap
+						+e.link
+							+icon('phone')
+							a(href="tel:+74956907241") +7 (495) 690 72 41
+						+e.link
+							+icon('email')
+							a(href="mailto:baa@info-space.ru") baa@info-space.ru
+						+e.link
+							+icon('address')
+							span 119034, Москва,<br>1-й Зачатьевский пер., 4
+				.col-sm-6.col-md-4.col-lg-auto
+					+footer-list('Давайте дружить', 'Facebook', 'VKontakte', 'Instagram', 'YouTube', 'Яндекс Дзен')
+				.col-12
+					+e.content
+						p На&nbsp;БАД-EXPO будет проводиться фото и&nbsp;видеосъёмка для публикации материалов на&nbsp;сайте и&nbsp;в&nbsp;социальных сетях выставки. Посещая мероприятие, Вы&nbsp;автоматически даёте свое согласие на&nbsp;произведение фото и&nbsp;видеосъемки организаторами выставки при ее&nbsp;проведении, обработку полученных материалов, а&nbsp;также публикацию таких фото и&nbsp;видеоматериалов в&nbsp;указанных целях
+			.row
+				.col-lg-auto
+					+e.footerContent
+						p © 2022 БАД-EXPO 24–26 марта 2022
+				.col 
+					+e.footerContent.text-center
+						p Организатор выставки EVENT-ХОЛЛ «ИнфоПространство»
+						p Сайт защищен reCAPTCHA от Google в соответствии с #[a(href="#") политикой конфиденциальности] и #[a(href="#") правилами использования.]
+				.col-lg-auto
+					+e.footerContent
+						a(href="#") Пользовательское соглашение

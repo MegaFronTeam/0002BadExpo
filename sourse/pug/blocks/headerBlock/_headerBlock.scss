@@ -14,6 +14,7 @@
 		}
 	}
 	h1 {
+		@include rfs(32px);
 		max-width: rem(752);
 		font-weight: 700;
 		margin-bottom: rem(20);
