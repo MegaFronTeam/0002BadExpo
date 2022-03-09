@@ -5,7 +5,7 @@ include ../blocks/topLine/_topLine.pug
 include ../blocks/top-nav/_top-nav.pug 
 //- include ../blocks/headerBlock/_headerBlock.pug
 //- include ../blocks/sForm/_sForm.pug
-include ../blocks/sContent/_sContent.pug
+//- include ../blocks/sContent/_sContent.pug
  
 include ../blocks/sContact/_sContact.pug
 include ../blocks/sForm/_sForm.pug
@@ -19,13 +19,14 @@ include ../blocks/footer/_footer.pug
 //- include ../blocks/sPlan/_sPlan.pug
 //- include ../blocks/sPartners/_sPartners.pug
 //- include ../blocks/sLocation/_sLocation.pug
+include ../blocks/sMembers/_sMembers.pug
 
 block variables
 	- let  mainPage= 'main-page' 
-	- let  bg= '02-take-part.png'
+	- let  bg= '04-members.png'
 
 block title
-	- let  title= 'Почему стоит участвовать - БАД-EXPO 24–26 марта 2022 — Международная специализированная выставка биологически активных добавок'
+	- let  title= 'Участники БАД-EXPO - БАД-EXPO 24–26 марта 2022 — Международная специализированная выставка биологически активных добавок'
 	title= title
 block pagecontent
 	//- +mob-mnu()
@@ -34,9 +35,9 @@ block pagecontent
 	+header()
 		+topLine
 		+top-nav()
-	+page-head('Почему стоит участвовать')
-		+breadcrumb('Главная', 'Почему стоит участвовать')
-	+sContent()
+	+page-head('Участники БАД-EXPO')
+		+breadcrumb('Главная', 'Участники БАД-EXPO')
+	+sMembers()
 	//- +headerBlock
 	//- +sAbout()
 	//- +sOurGoals()
