@@ -1,0 +1,21 @@
+mixin sOurEmployees-item(i, title, text, email, tel, phone)
+	.col-6.col-lg-3
+		+e.wrap
+			img(src=`img/@2x/sOurEmployees-${i}.jpg`, alt="")
+			h4!= title
+			p!= text
+			a(href=`mailto:${email}`)!= email
+			a(href=`tel:${tel}`)!= phone
+
+mixin sOurEmployees(data)
+	// start sOurEmployees
+	+b.SECTION.sOurEmployees.section#sOurEmployees&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Наши сотрудники
+			.row
+				+sOurEmployees-item(1, 'Татьяна Львова', 'Директор выставки', 'baa@info-space.ru', '+79859228654', '+7 (985) 922 86 54')
+				+sOurEmployees-item(2, 'Анастасия Глуховская', 'Бренд-директор', 'brand@info-space.ru', '+79164686126', '+7 (916) 468 61 26')
+				+sOurEmployees-item(3, 'Анна Косцова', 'Клиент-менеджер', 'anna@info-space.ru', '+79256628814', '+7 (925) 662 88 14')
+				+sOurEmployees-item(4, 'Александра Патрушева', 'Дизайнер выставки', 'katalog-baaexpo@info-space.ru', '+79035718961', '+7 (903) 571 89 61')
+	// end sOurEmployees

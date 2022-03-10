@@ -45,7 +45,7 @@
 				flex-direction: column;
 			}
 			td {
-				padding: rem(22.8) rem(18) rem(19.6);
+				padding: rem(21.136) rem(18) rem(19.6);
 				font-size: rem(14.4);
 				font-weight: 700;
 				border: 1px solid $white;
@@ -54,7 +54,7 @@
 					text-align: center;
 				}
 				p {
-					margin-bottom: rem(20.8);
+					margin-bottom: rem(16.8);
 					&:not(:first-child) {
 						// margin-bottom: 0;
 						font-style: italic;

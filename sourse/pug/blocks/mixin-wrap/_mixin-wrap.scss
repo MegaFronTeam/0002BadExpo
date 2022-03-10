@@ -171,3 +171,21 @@
 		}
 	}
 }
+
+
+.map-wrap {
+	@include block(1746, 544);
+	@include media-breakpoint-down(md) {
+		--ratio: 888/1746;
+	}
+	@include media-breakpoint-down(sm) {
+		--ratio: 1048/1746;
+	}
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}

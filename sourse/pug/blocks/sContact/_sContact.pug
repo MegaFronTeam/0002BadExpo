@@ -2,8 +2,23 @@ mixin sContact()
 	// start sContact
 	+b.SECTION.sContact.section#sContact&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sContact
-				
 			.row
+				.col-md
+					+e.content
+						h4 Место проведения
+						p EVENT-ХОЛЛ «ИнфоПространство»
+						p 1-й Зачатьевский пер., 4
+						a(href="tel:+74956907241") +7 (495) 690 72 41
+						a(href="mailto:baa@info-space.ru") baa@info-space.ru
+						h4 Режим работы
+						p 24–26 марта, 10.00-19.00
+				.col-md
+					h4 Задать вопрос
+					+form-wrap()
+						+input('Иванов Иван Иванович')(required)
+						+input('+7 123 456 78 90', 'tel')
+						+input('example@gmail.com', 'email')(required)
+						+input('О чем вы хотите спросить?', 'textarea')(required)
+						+policy()
+						button(type="submit").btn.btn-primary Отправить
 	// end sContact
