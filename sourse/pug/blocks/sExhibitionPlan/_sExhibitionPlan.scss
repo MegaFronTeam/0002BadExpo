@@ -1,0 +1,73 @@
+// start .sExhibitionPlan
+.sExhibitionPlan {
+	--sPT: 0;
+	--sPB: #{rem(20)};
+	// --sTPB: ;
+	@include media-breakpoint-up(lg) {
+		--sPB: #{rem(57.6)};
+	}
+	#circle_02-2, #circle_03-1, #circle_03-2, #circle_04, #circle_05, #circle_06, #circle_08, #circle_09-1, #circle_10, #circle_11-1, #circle_11-2, #circle_11-6, #circle_11-7, #circle_12-2, #circle_12-3, #circle_14-1, #circle_14-2, #circle_20-1, #circle_20-10, #circle_20-2, #circle_20-3, #circle_20-4, #circle_20-5, #circle_20-8, #circle_20-9, #circle_23, #circle_24-1, #circle_24-2, #circle_25-1, #circle_26-1, #circle_26-2, #circle_26-3, #circle_26-4, #circle_27-1, #circle_27-2, #circle_27-3, #circle_27-4, #circle_28-1, #circle_28-2, #circle_28-3, #circle_28-4, #circle_29-1, #circle_29-2, #circle_30, #circle_31-1, #circle_31-2, #circle_31-3, #circle_31-4, #circle_32-1, #circle_32-2, #circle_32-3, #circle_33-1, #circle_33-2, #circle_35, #circle_36-1, #circle_36-2, #circle_38, #circle_39, #circle_40, #circle_44, #circle_50-1, #circle_50-10, #circle_50-11, #circle_50-14, #circle_50-2, #circle_50-3, #circle_50-4, #circle_50-6, #circle_50-7, #circle_50-9, #circle_50-9_1 {
+    fill: #34adce;
+    stroke: #34adce;
+	}
+	#circle_09-2, #circle_09-3, #circle_09-4, #circle_09-5, #circle_09-6, #circle_11-3, #circle_11-4, #circle_11-5, #circle_20-6, #circle_20-7, #circle_42, #circle_50-8 {
+    fill: #519e4d;
+    stroke: #519e4d;
+	}
+	#stand-02-1, #stand-07, #stand-09-7, #stand-12-1, #stand-15-1, #stand-15-2, #stand-25-2, #stand-34, #stand-36-3, #stand-41, #stand-50-12, #stand-50-13, #stand-50-5, #stand-60 {
+    display: none;
+	}
+	&__stand-info {
+		display: flex;
+		color: $body-color;
+		font-size: rem(21.6);
+		font-weight: 700;
+		@include media-breakpoint-down(md) {
+			flex-direction: column;
+			align-items: center;
+			font-size: rem(16);
+			.sExhibitionPlan__text {
+				text-align: center;
+			}
+		}
+		&:not(:last-child) {
+			margin-bottom: rem(9);
+		}
+		&:nth-child(2) {
+			.sExhibitionPlan__number {
+				background-color: #e1f4fd;
+			}
+		}
+		&:nth-child(3) {
+			.sExhibitionPlan__number {
+				background-color: #4db848;
+			}
+		}
+		&:nth-child(4) {
+			.sExhibitionPlan__number {
+				background-color: #f0f0f0;
+			}
+		}
+	}
+	&__number, &__text {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+	&__number {
+		padding: 0 rem(20);
+		margin-right: rem(12.6);
+		span {
+			&:first-child {
+				border-bottom: 2px solid #000
+			}
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sExhibitionPlan

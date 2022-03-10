@@ -415,6 +415,33 @@ function eventHandler() {
 	$('.header').hcSticky({
     // stickTo: $('#content')
   });
+
+	var sExhibitionSliderThumbs = new Swiper(".sExhibitionSlider__slider-thumbs--js", {
+		loop: true,
+		spaceBetween: 30,
+		slidesPerView: 'auto',
+		centeredSlides: true,
+		watchSlidesProgress: true,
+		breakpoints: {
+			576: {
+				slidesPerView: 5,
+			},
+			768: {
+				slidesPerView: 7,
+			},
+			992: {
+				slidesPerView: 11,
+			}
+		}
+	});
+
+	const sExhibitionSlider = new Swiper('.sExhibitionSlider__slider--js', {
+		slidesPerView: 1,
+		spaceBetween: 0,
+		thumbs: {
+			swiper: sExhibitionSliderThumbs,
+		}
+	});
 };
 if (document.readyState !== 'loading') {
 	eventHandler();

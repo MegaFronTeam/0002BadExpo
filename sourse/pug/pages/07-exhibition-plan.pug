@@ -1,0 +1,69 @@
+extends ../layout/main.pug
+
+include ../blocks/header/_header.pug
+include ../blocks/topLine/_topLine.pug
+include ../blocks/top-nav/_top-nav.pug 
+//- include ../blocks/headerBlock/_headerBlock.pug
+//- include ../blocks/sForm/_sForm.pug
+//- include ../blocks/sContent/_sContent.pug
+ 
+//- include ../blocks/sContact/_sContact.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/footer/_footer.pug
+//- include ../blocks/sAbout/_sAbout.pug
+//- include ../blocks/sOurGoals/_sOurGoals.pug
+//- include ../blocks/sVideoWrap/_sVideoWrap.pug
+//- include ../blocks/sExhibitors/_sExhibitors.pug
+//- include ../blocks/sReviews/_sReviews.pug
+//- include ../blocks/sPlan/_sPlan.pug
+//- include ../blocks/sPartners/_sPartners.pug
+//- include ../blocks/sLocation/_sLocation.pug
+//- include ../blocks/sProgram/_sProgram.pug
+include ../blocks/sExhibitionPlan/_sExhibitionPlan.pug
+include ../blocks/sExhibitionSlider/_sExhibitionSlider.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= '07-exhibition-plan.png'
+
+block title
+	- let  title= 'Контакты - БАД-EXPO 24–26 марта 2022 — Международная специализированная выставка биологически активных добавок'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+header()
+		+topLine
+		+top-nav()
+	+page-head('Контакты')
+		+breadcrumb('Главная', 'Контакты')
+	+sExhibitionPlan()
+	+sExhibitionSlider()
+	//- +headerBlock
+	//- +sAbout()
+	//- +sOurGoals()
+	//- +sVideoWrap()
+	//- +sExhibitors()
+	//- +sReviews()
+	//- +sPlan()
+	//- +sPartners()
+	//- +sLocation()
+	//- +soc()
+	//- +sForm()
+	//- +sForm()
+	//- - let list = items[0].title
+	//- p= list
+	//- .container
+	//- 	each item in items
+	//- 		li 
+	//- 			h2= item.title
+	//- 			p= item.text
+	//- +sContact()
+	
+	+footer()
+      
+
+
+

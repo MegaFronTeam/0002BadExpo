@@ -1,0 +1,46 @@
+// start .sExhibitionSlider
+.sExhibitionSlider {
+	--sPT: 0;
+	// --sPB: ;
+	// --sTPB: ;
+	&__slide {
+		text-align: center;
+		img {
+			width: 100%;
+		}
+		&--thumbs {
+			width: auto;
+			// margin-right: 30px;
+			// @include media-breakpoint-up(sm) {
+			// 	margin-right: 0;
+			// }
+		}
+	}
+	&__slider-wrap {
+		margin-bottom: rem(30);
+	}
+	&__slide-wrap {
+		@include mt;
+		width: rem(69);
+		border: 1px solid #86cdf5;
+		color: #86cdf5;
+		padding: rem(7) 0;
+		span {
+			font-size: rem(20);
+			line-height: calc(23/20);
+		}
+	}
+	.swiper-slide-thumb-active {
+		.sExhibitionSlider__slide-wrap {
+			border-color: $gray-600;
+			color: $gray-600;
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sExhibitionSlider
