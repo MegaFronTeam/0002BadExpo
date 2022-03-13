@@ -47,7 +47,7 @@
 	display: block;
 	height: calc(var(--h)* 12);
 	position: relative; 
-	font-size: 32px;
+	font-size: 20px;
 	width: 1em;
 	cursor: pointer;
 	span:after,
@@ -110,14 +110,14 @@
 		.toggle-menu-mobile { 
 			margin-left: -15%;
 			position: absolute; 
-			left: 0;
-			right: auto;
-			color: #FFF;
-			top: 10px;
+			left: auto;
+			right: 15px;
+			color: #fff;
+			top: 15px;
 			z-index: 9999; 
 			span:after,
 			span:before {
-				--color: #ffffff;
+				--color: #{$body-color};
 			}
 		}
 		&__inner {

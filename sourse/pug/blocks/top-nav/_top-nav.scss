@@ -45,7 +45,11 @@
 		margin: 0;
 		display: flex;
 		align-items: center;
-		
+		@include media-breakpoint-down(lg) {
+			flex-direction: column;
+			align-items: flex-start;
+			flex-grow: 1;
+		}
 		& > .menu-item{
 			--menu-item-me: 1.3rem;
 			--arrow-w: #{rem(10)};
@@ -132,7 +136,9 @@
 			width: auto;
 			height: auto;
 			display: block;
-
+			@include media-breakpoint-down(lg) {
+				background-color: $gray-600;
+			}
 			.menu-item{
 				margin-bottom: rem(3);
 				display: block;
@@ -148,6 +154,19 @@
 				&:hover {
 					color: rgba(77,184,72,1) ;
 				}
+			}
+		}
+	}
+	.menu-mobile {
+		&__inner {
+			display: flex;
+			flex-direction: column;
+			align-items: self-start;
+			button {
+				border-color: #ffe652;
+    		background-color: #ffe652;
+				margin-top: 0;
+
 			}
 		}
 	}
