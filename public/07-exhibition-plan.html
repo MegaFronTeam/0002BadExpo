@@ -49,8 +49,26 @@
 										<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
 										</div>
 										<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Экспонентам</a></li>
-											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Посетителям</a></li>
+											<li class="menu-item menu-item-has-children"><a href="#" itemprop="url">Экспонентам</a>
+												<ul class="sub-menu">
+													<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Экспонентам</a></li>
+													<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Почему стоит участвовать</a></li>
+													<li class="menu-item" itemprop="item"><a href="#" itemprop="url">План выставки</a></li>
+													<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Заявка на участие</a></li>
+													<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Маркетинговые услуги</a></li>
+													<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Спонсорские пакеты</a></li>
+												</ul>
+											</li>
+											<li class="menu-item menu-item-has-children"><a href="#" itemprop="url">Посетителям</a>
+												<ul class="sub-menu">
+													<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Экспонентам</a></li>
+													<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Почему стоит участвовать</a></li>
+													<li class="menu-item" itemprop="item"><a href="#" itemprop="url">План выставки</a></li>
+													<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Заявка на участие</a></li>
+													<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Маркетинговые услуги</a></li>
+													<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Спонсорские пакеты</a></li>
+												</ul>
+											</li>
 											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Экспоненты</a></li>
 											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Программа</a></li>
 											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Контакты</a></li>
@@ -727,6 +745,371 @@
 				</div>
 			</section>
 			<!-- end sExhibitionSlider-->
+			<!-- start sRequest-->
+			<section class="sRequest section" id="sRequest">
+				<div class="container">
+					<div class="section-title">
+						<h2>Заявка на участие</h2>
+						<p>Для получения информации об&nbsp;участии в&nbsp;выставке БАД-EXPO, пожалуйста, заполните электронную форму. Наши специалисты свяжутся с&nbsp;Вами.</p>
+					</div>
+					<div class="overflow-hidden">
+						<div class="overflow-x">
+							<table class="stands-prices">
+								<thead>
+									<tr>
+										<th>Наименование услуги</th>
+										<th>Состав услуги</th>
+										<th>Стоимость, руб</th>
+										<th class="w-min">Ед. изм.</th>
+										<th>Кол-во</th>
+										<th>Наценка, %</th>
+										<th>Итого, руб</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="green">
+										<td colspan="7">Обязательные услуги</td>
+									</tr>
+									<tr>
+										<td>Регистрационный взнос (обязательно)</td>
+										<td>Информационная полоса об участнике в каталоге формата А5<sup class="blue-text footnote">*</sup></td>
+										<td class="text-center price">
+											<input class="price-input" type="text" value="15000" readonly=""/>
+										</td>
+										<td class="text-center">шт.</td>
+										<td class="empty-bg">
+											<input class="table-input" type="number" step="any" min="0" name="quantity-contribution" value="" data-validate="" data-qty=""/>
+										</td>
+										<td class="empty-bg"> -</td>
+										<td class="empty-bg">
+											<input class="summary-row" type="text" name="summ-contribution" value="" readonly="" data-result=""/>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td>Оборудованный стенд</td>
+										<td>Стены, столы, стулья, фризовая надпись, электричество, освещение, уборка</td>
+										<td class="text-center price">
+											<input class="price-input" type="text" value="13900" readonly=""/>
+										</td>
+										<td class="text-center">м<sup>2</sup></td>
+										<td class="empty-bg">
+											<input class="table-input" type="number" step="any" min="0" name="quantity-area" value="" data-qty=""/>
+										</td>
+										<td class="empty-bg">
+											<input type="number" name="discount" step="any" min="0" value=""/>
+										</td>
+										<td class="empty-bg">
+											<input class="summary-row" type="text" name="summ-area" value="" readonly="" data-result=""/>
+										</td>
+									</tr>
+									<tr class="wight">
+										<td colspan="7">или</td>
+									</tr>
+									<tr class="odd">
+										<td>Рабочее место</td>
+										<td>Стена, стол, 3 стула, фризовая надпись, электричество, освещение, уборка</td>
+										<td class="text-center price">
+											<input class="price-input" type="text" value="27900" readonly=""/>
+										</td>
+										<td class="text-center">шт.</td>
+										<td class="empty-bg">
+											<input class="table-input" type="number" step="any" min="0" name="quantity-workplace" value="" data-qty=""/>
+										</td>
+										<td class="empty-bg"> -</td>
+										<td class="empty-bg">
+											<input class="summary-row" type="text" name="summ-workplace" value="" readonly="" data-result=""/>
+										</td>
+									</tr>
+									<tr class="green">
+										<td colspan="7">Дополнительные услуги</td>
+									</tr>
+									<tr class="odd">
+										<td>Презентация</td>
+										<td>Презентация со сцены 15 минут, зал на 200 человек</td>
+										<td class="text-center price">
+											<input class="price-input" type="text" value="12000" readonly=""/>
+										</td>
+										<td class="text-center">шт.</td>
+										<td class="empty-bg">
+											<input class="table-input" type="number" step="any" min="0" name="quantity-presentation" value="" data-qty=""/>
+										</td>
+										<td class="empty-bg"> -</td>
+										<td class="empty-bg">
+											<input class="summary-row" type="text" name="summ-presentation" value="" readonly="" data-result=""/>
+										</td>
+									</tr>
+									<tr>
+										<td>Брендирование стенда</td>
+										<td>Печать и установка полноцветного тканевого баннера<br/>(макет от участника)<sup class="blue-text footnote">**</sup></td>
+										<td class="text-center price">
+											<input class="price-input" type="text" value="2900" readonly=""/>
+										</td>
+										<td class="text-center">м<sup>2</sup></td>
+										<td class="empty-bg">
+											<input class="table-input" type="number" step="any" min="0" name="quantity-branding" value="" data-qty=""/>
+										</td>
+										<td class="empty-bg"> -</td>
+										<td class="empty-bg">
+											<input class="summary-row" type="text" name="summ-branding" value="" readonly="" data-result=""/>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td rowspan="7">Дополнительное оборудование	</td>
+										<td>Витрина стеклянная 915х400х2650 мм</td>
+										<td class="text-center price">
+											<input class="price-input" type="text" value="9000" readonly=""/>
+										</td>
+										<td class="text-center">шт.</td>
+										<td class="empty-bg">
+											<input class="table-input" type="number" step="any" min="0" name="quantity-equipment" value="" data-qty=""/>
+										</td>
+										<td class="empty-bg"> -</td>
+										<td class="empty-bg">
+											<input class="summary-row" type="text" name="summ-equipment" value="" readonly="" data-result=""/>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td class="text-left">Тумба стеклянная 915х400х990 мм</td>
+										<td class="text-center price">
+											<input class="price-input" type="text" value="6500" readonly=""/>
+										</td>
+										<td class="text-center">шт.</td>
+										<td class="empty-bg">
+											<input class="table-input" type="number" step="any" min="0" name="quantity-glass-tumba" value="" data-qty=""/>
+										</td>
+										<td class="empty-bg"> -</td>
+										<td class="empty-bg">
+											<input class="summary-row" type="text" name="summ-glass-tumba" value="" readonly="" data-result=""/>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td class="text-left">Кабина закрытая с дверью-гармошка 920х920х2650 мм</td>
+										<td class="text-center price">
+											<input class="price-input" type="text" value="2900" readonly=""/>
+										</td>
+										<td class="text-center">шт.</td>
+										<td class="empty-bg">
+											<input class="table-input" type="number" step="any" min="0" name="quantity-cabin" value="" data-qty=""/>
+										</td>
+										<td class="empty-bg"> -</td>
+										<td class="empty-bg">
+											<input class="summary-row" type="text" name="summ-cabin" value="" readonly="" data-result=""/>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td class="text-left">Полка деревянная 900х200 мм</td>
+										<td class="text-center price">
+											<input class="price-input" type="text" value="300" readonly=""/>
+										</td>
+										<td class="text-center">шт.</td>
+										<td class="empty-bg">
+											<input class="table-input" type="number" step="any" min="0" name="quantity-shelf-900x200" value="" data-qty=""/>
+										</td>
+										<td class="empty-bg"> -</td>
+										<td class="empty-bg">
+											<input class="summary-row" type="text" name="summ-shelf-900x200" value="" readonly="" data-result=""/>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td class="text-left">Полка деревянная 1200х200 мм</td>
+										<td class="text-center price">
+											<input class="price-input" type="text" value="400" readonly=""/>
+										</td>
+										<td class="text-center">шт.</td>
+										<td class="empty-bg">
+											<input class="table-input" type="number" step="any" min="0" name="quantity-shelf-1200x200" value="" data-qty=""/>
+										</td>
+										<td class="empty-bg"> -</td>
+										<td class="empty-bg">
+											<input class="summary-row" type="text" name="summ-shelf-1200x200" value="" readonly="" data-result=""/>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td class="text-left">Полка деревянная 1800х200 мм</td>
+										<td class="text-center price">
+											<input class="price-input" type="text" value="500" readonly=""/>
+										</td>
+										<td class="text-center">шт.</td>
+										<td class="empty-bg">
+											<input class="table-input" type="number" step="any" min="0" name="quantity-shelf-1800x200" value="" data-qty=""/>
+										</td>
+										<td class="empty-bg"> -</td>
+										<td class="empty-bg">
+											<input class="summary-row" type="text" name="summ-shelf-1800x200" value="" readonly="" data-result=""/>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td class="text-left">Интернет-провод</td>
+										<td class="text-center price">
+											<input class="price-input" type="text" value="7000" readonly=""/>
+										</td>
+										<td class="text-center">шт.</td>
+										<td class="empty-bg">
+											<input class="table-input" type="number" step="any" min="0" name="quantity-utp" value="" data-qty=""/>
+										</td>
+										<td class="empty-bg"> -</td>
+										<td class="empty-bg">
+											<input class="summary-row" type="text" name="summ-utp" value="" readonly="" data-result=""/>
+										</td>
+									</tr>
+									<tr>
+										<td>Питание для Экспонентов<br/>(все включено)</td>
+										<td>Чай, кофе, сок, вода, куриный бульон, пирожки и сэндвичи в ассортименте</td>
+										<td class="text-center price">
+											<input class="price-input" type="text" value="1900" readonly=""/>
+										</td>
+										<td class="text-center">м<sup>2</sup></td>
+										<td class="empty-bg">
+											<input class="table-input" type="number" step="any" min="0" name="quantity-nutrition" value="" data-qty=""/>
+										</td>
+										<td class="empty-bg"> -</td>
+										<td class="empty-bg">
+											<input class="summary-row" type="text" name="summ-nutrition" value="" readonly="" data-result=""/>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="total d-flex justify-content-end align-items-center">
+							<p>ИТОГО, СТОИМОСТЬ УЧАСТИЯ:</p>
+							<input class="input-total" type="text" name="total" value="" readonly="" data-total=""/>
+						</div>
+						<div class="footnotes-text">
+							<p class="mb-1"><b>*</b>В указанную стоимость не включается НДС в связи с применением Организатором упрощенной системы бухгалтерского учета и налогообложения</p>
+							<p><b>**</b>На угловой стенд действует наценка 5%, стенд-полуостров – 7%, стенды № 02-1, 02-2, 03-1, 03-2, 04, 05, 06, 44 – 10%</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sRequest-->
+			<!-- start sForm-->
+			<section class="sForm section" id="sForm">
+				<div class="container">
+					<div class="section-title">
+						<h4>УЧАСТНИК/ПЛАТЕЛЬЩИК (реквизиты указываются в&nbsp;соответствии с&nbsp;карточкой предприятия)</h4>
+						<div class="form-wrap">
+							<form>
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="form-wrap__head-wrap">
+											<h4>Вы выбрали стенд №</h4>
+											<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="text" type="text" placeholder=""/>
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<div class="form-wrap__input-wrap form-group">
+											<label><span class="form-wrap__input-title">Название компании</span><input class="form-wrap__input form-control" name="text" type="text" placeholder="в соответствии с учредительными документами"/>
+											</label>
+										</div>
+										<!-- +e.input-wrap-->
+										<div class="form-wrap__input-wrap form-group">
+											<label><span class="form-wrap__input-title">Юридический адрес</span><input class="form-wrap__input form-control" name="text" type="text" placeholder=""/>
+											</label>
+										</div>
+										<!-- +e.input-wrap-->
+										<div class="form-wrap__input-wrap form-group">
+											<label><span class="form-wrap__input-title">Фактический адрес</span><input class="form-wrap__input form-control" name="text" type="text" placeholder=""/>
+											</label>
+										</div>
+										<!-- +e.input-wrap-->
+										<div class="row">
+											<div class="col-md-6"> 
+												<div class="form-wrap__input-wrap form-group">
+													<label><span class="form-wrap__input-title">Телефон</span><input class="form-wrap__input form-control" name="tel" type="tel" placeholder=""/>
+													</label>
+												</div>
+												<!-- +e.input-wrap-->
+											</div>
+											<div class="col-md-6">
+												<div class="form-wrap__input-wrap form-group">
+													<label><span class="form-wrap__input-title">Email</span><input class="form-wrap__input form-control" name="mail" type="mail" placeholder="mail"/>
+													</label>
+												</div>
+												<!-- +e.input-wrap-->
+											</div>
+										</div>
+										<div class="form-wrap__input-wrap form-group">
+											<label><span class="form-wrap__input-title">Контактное лицо</span><input class="form-wrap__input form-control" name="text" type="text" placeholder=""/>
+											</label>
+										</div>
+										<!-- +e.input-wrap-->
+										<div class="form-wrap__input-wrap form-group">
+											<label><span class="form-wrap__input-title">ФИО руководителя</span><input class="form-wrap__input form-control" name="text" type="text" placeholder="Должностное лицо, имеющее право подписи первичных документов"/>
+											</label>
+										</div>
+										<!-- +e.input-wrap-->
+										<div class="form-wrap__input-wrap form-group">
+											<label><span class="form-wrap__input-title">Примечание</span><textarea class="form-wrap__input form-control" name="textarea" placeholder=""></textarea>
+											</label>
+										</div>
+										<!-- +e.input-wrap-->
+									</div>
+									<div class="col-lg-6">
+										<div class="row">
+											<div class="col-md-6"> 
+												<div class="form-wrap__input-wrap form-group">
+													<label><span class="form-wrap__input-title">ИНН</span><input class="form-wrap__input form-control" name="text" type="text" placeholder=""/>
+													</label>
+												</div>
+												<!-- +e.input-wrap-->
+											</div>
+											<div class="col-md-6">
+												<div class="form-wrap__input-wrap form-group">
+													<label><span class="form-wrap__input-title">КПП</span><input class="form-wrap__input form-control" name="text" type="text" placeholder=""/>
+													</label>
+												</div>
+												<!-- +e.input-wrap-->
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6"> 
+												<div class="form-wrap__input-wrap form-group">
+													<label><span class="form-wrap__input-title">ОКПО</span><input class="form-wrap__input form-control" name="text" type="text" placeholder=""/>
+													</label>
+												</div>
+												<!-- +e.input-wrap-->
+											</div>
+											<div class="col-md-6">
+												<div class="form-wrap__input-wrap form-group">
+													<label><span class="form-wrap__input-title">ОГРН</span><input class="form-wrap__input form-control" name="text" type="text" placeholder=""/>
+													</label>
+												</div>
+												<!-- +e.input-wrap-->
+											</div>
+										</div>
+										<div class="form-wrap__input-wrap form-group">
+											<label><span class="form-wrap__input-title">Р/с</span><input class="form-wrap__input form-control" name="text" type="text" placeholder=""/>
+											</label>
+										</div>
+										<!-- +e.input-wrap-->
+										<div class="form-wrap__input-wrap form-group">
+											<label><span class="form-wrap__input-title">Наименование банка</span><input class="form-wrap__input form-control" name="text" type="text" placeholder=""/>
+											</label>
+										</div>
+										<!-- +e.input-wrap-->
+										<div class="form-wrap__input-wrap form-group">
+											<label><span class="form-wrap__input-title">К/c</span><input class="form-wrap__input form-control" name="text" type="text" placeholder=""/>
+											</label>
+										</div>
+										<!-- +e.input-wrap-->
+										<div class="form-wrap__input-wrap form-group">
+											<label><span class="form-wrap__input-title">БИК</span><input class="form-wrap__input form-control" name="text" type="text" placeholder=""/>
+											</label>
+										</div>
+										<!-- +e.input-wrap-->
+										<div class="form-wrap__policy">
+											<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/><small class="custom-input__text">Передавая свои персональные данные на сервер БАД Club, я выражаю согласие на их последующую обработку и хранение в соответствии с Федеральным законом Российской Федерации № 152-ФЗ "О персональных данных" * О</small>
+											</label>
+										</div>
+										<button class="btn" type="submit">Отправить</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sForm-->
 			<footer class="footer">
 				<div class="container">
 					<div class="row">
@@ -790,6 +1173,8 @@
 					</div>
 				</div>
 			</footer>
+			<div class="whatsapp-link"><a href="#"><svg style="pointer-events:none; display:block; height:50px; width:50px;" width="50px" height="50px" viewBox="0 0 1024 1024"> <defs> <path id="htwasqicona-chat" d="M1023.941 765.153c0 5.606-.171 17.766-.508 27.159-.824 22.982-2.646 52.639-5.401 66.151-4.141 20.306-10.392 39.472-18.542 55.425-9.643 18.871-21.943 35.775-36.559 50.364-14.584 14.56-31.472 26.812-50.315 36.416-16.036 8.172-35.322 14.426-55.744 18.549-13.378 2.701-42.812 4.488-65.648 5.3-9.402.336-21.564.505-27.15.505l-504.226-.081c-5.607 0-17.765-.172-27.158-.509-22.983-.824-52.639-2.646-66.152-5.4-20.306-4.142-39.473-10.392-55.425-18.542-18.872-9.644-35.775-21.944-50.364-36.56-14.56-14.584-26.812-31.471-36.415-50.314-8.174-16.037-14.428-35.323-18.551-55.744-2.7-13.378-4.487-42.812-5.3-65.649-.334-9.401-.503-21.563-.503-27.148l.08-504.228c0-5.607.171-17.766.508-27.159.825-22.983 2.646-52.639 5.401-66.151 4.141-20.306 10.391-39.473 18.542-55.426C34.154 93.24 46.455 76.336 61.07 61.747c14.584-14.559 31.472-26.812 50.315-36.416 16.037-8.172 35.324-14.426 55.745-18.549 13.377-2.701 42.812-4.488 65.648-5.3 9.402-.335 21.565-.504 27.149-.504l504.227.081c5.608 0 17.766.171 27.159.508 22.983.825 52.638 2.646 66.152 5.401 20.305 4.141 39.472 10.391 55.425 18.542 18.871 9.643 35.774 21.944 50.363 36.559 14.559 14.584 26.812 31.471 36.415 50.315 8.174 16.037 14.428 35.323 18.551 55.744 2.7 13.378 4.486 42.812 5.3 65.649.335 9.402.504 21.564.504 27.15l-.082 504.226z"></path> </defs> <linearGradient id="htwasqiconb-chat" gradientUnits="userSpaceOnUse" x1="512.001" y1=".978" x2="512.001" y2="1025.023"> <stop offset="0" stop-color="#61fd7d"></stop> <stop offset="1" stop-color="#2bb826"></stop> </linearGradient> <use xlink:href="#htwasqicona-chat" overflow="visible" fill="url(#htwasqiconb-chat)"></use> <g> <path fill="#FFF" d="M783.302 243.246c-69.329-69.387-161.529-107.619-259.763-107.658-202.402 0-367.133 164.668-367.214 367.072-.026 64.699 16.883 127.854 49.017 183.522l-52.096 190.229 194.665-51.047c53.636 29.244 114.022 44.656 175.482 44.682h.151c202.382 0 367.128-164.688 367.21-367.094.039-98.087-38.121-190.319-107.452-259.706zM523.544 808.047h-.125c-54.767-.021-108.483-14.729-155.344-42.529l-11.146-6.612-115.517 30.293 30.834-112.592-7.259-11.544c-30.552-48.579-46.688-104.729-46.664-162.379.066-168.229 136.985-305.096 305.339-305.096 81.521.031 158.154 31.811 215.779 89.482s89.342 134.332 89.312 215.859c-.066 168.243-136.984 305.118-305.209 305.118zm167.415-228.515c-9.177-4.591-54.286-26.782-62.697-29.843-8.41-3.062-14.526-4.592-20.645 4.592-6.115 9.182-23.699 29.843-29.053 35.964-5.352 6.122-10.704 6.888-19.879 2.296-9.176-4.591-38.74-14.277-73.786-45.526-27.275-24.319-45.691-54.359-51.043-63.543-5.352-9.183-.569-14.146 4.024-18.72 4.127-4.109 9.175-10.713 13.763-16.069 4.587-5.355 6.117-9.183 9.175-15.304 3.059-6.122 1.529-11.479-.765-16.07-2.293-4.591-20.644-49.739-28.29-68.104-7.447-17.886-15.013-15.466-20.645-15.747-5.346-.266-11.469-.322-17.585-.322s-16.057 2.295-24.467 11.478-32.113 31.374-32.113 76.521c0 45.147 32.877 88.764 37.465 94.885 4.588 6.122 64.699 98.771 156.741 138.502 21.892 9.45 38.982 15.094 52.308 19.322 21.98 6.979 41.982 5.995 57.793 3.634 17.628-2.633 54.284-22.189 61.932-43.615 7.646-21.427 7.646-39.791 5.352-43.617-2.294-3.826-8.41-6.122-17.585-10.714z"></path> </g> </svg> </a>
+			</div>
 		</div>
 		<script src="libs/jquery/jquery.min.js"></script>
 		<script src="libs/hc-sticky/hc-sticky.js"></script>

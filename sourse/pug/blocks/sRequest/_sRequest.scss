@@ -1,0 +1,124 @@
+// start .sRequest
+.sRequest {
+	--sPT: 0;
+	--sPB: #{rem(35)};
+	// --sTPB: ;
+	.section-title {
+		margin-bottom: rem(42);
+		h2 {
+			margin-bottom: rem(20);
+		}
+		p {
+			font-size: rem(21);
+			margin-bottom: 0;
+		}
+	}
+	.overflow-x {
+		overflow: scroll;
+	}
+	table {
+		width: 100%;
+		min-width: 1116px;
+		margin: 0;
+		border-width: 1px 0 0 1px;
+    border-spacing: 3px;
+    border-collapse: separate;
+		thead th {
+			text-align: center;
+			vertical-align: middle;
+			background-color: #a4d14e;
+			border-bottom: 2px solid #dee2e6;
+			&:nth-child(1) {
+				width: 179px;
+			}
+			&:nth-child(2) {
+				width: 370px;
+			}
+			&:nth-child(3) {
+				width: 75px;
+			}
+			&:nth-child(4), &:nth-child(5), &:nth-child(6) {
+				width: 6%;
+			}
+			&:nth-child(7) {
+				width: 8%;
+			}
+		}
+		tbody {
+			tr {
+				&:nth-child(1),
+				&:nth-child(6) {
+					background-color: #4db848;
+				}
+			}
+			td {
+				&:first-child {
+					text-align: center;
+				}
+				input {
+					background: 0 0;
+    			border: none;
+					width: 100%;
+    			max-width: 390px;
+					padding: 5px 10px;
+					font-size: 16px;
+					color: #464646;
+					text-align: center;
+					font-weight: 700;
+				}
+			}
+		}
+		thead th, tbody td {
+			padding: 0.2rem;
+		}
+		th, td {
+			border: 1px solid #fff;
+			border-radius: 4px;
+			font-size: rem(14.4);
+			font-weight: 700;
+		}
+		table, td, th {
+			border: 1px solid rgba(0,0,0,.1);
+		}
+		thead tr, tbody tr {
+			background-color: #e1f4fd;
+		}
+	}
+	.total {
+		p {
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: rem(14.4);
+			margin-right: 4px;
+			margin-bottom: 0;
+		}
+		input {
+			border: 2px solid #c7eafb;
+			border-radius: 4px;
+			font-size: .825rem;
+			width: 100%;
+			max-width: 185px;
+			text-align: right;
+			padding-right: 23px;
+			font-weight: 700;
+			padding-top: 0;
+			font-size: 16px;
+		}
+	}
+	.footnotes-text {
+		margin-top: rem(9);
+		p {
+			margin-bottom: 0;
+			&:first-child {
+				margin-bottom: rem(4.5);
+			}
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sRequest

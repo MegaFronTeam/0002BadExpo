@@ -39,6 +39,118 @@
 			}
 		}
 	}
+	.menu{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		align-items: center;
+		
+		& > .menu-item{
+			--menu-item-me: 1.3rem;
+			--arrow-w: #{rem(10)};
+			--arrow-ms: #{rem(10)};
+
+			// @include media-breakpoint-up(lg) {
+			// 	padding: rem(32) 0 rem(32) 0;
+			// }
+			margin-right: var(--menu-item-me);
+			&::after {
+				@include mt;
+				content: '';
+				display: block;
+				width: 0;
+				height: 2px;
+				background-color: #fff;
+			}
+			&:hover {
+				&::after {
+					width: 100%;
+				}
+			}
+			//all links
+			a{
+				font-weight: 600;
+				font-size: rem(16);
+				line-height: 1;
+				color: $white;
+			}
+
+			& > a{
+				font-weight: 600;
+				font-size: rem(16);
+				line-height: 1;
+				color: rgba(70,70,70,1);
+				@include media-breakpoint-only(lg) {
+					font-size: rem(14);
+				}
+				&:hover {
+					color: rgba(77,184,72,1) ;
+				}
+			}
+
+			&.menu-item-has-children{
+				&:hover{
+					--sub-mnu-scale: 1;
+				}
+
+
+				position: relative;
+				z-index: 10;
+				margin-right: calc(var(--menu-item-me) - var(--arrow-ms, 0px) - var(--arrow-w, 0px));
+
+				display: flex;
+				align-items: center;
+				&:after{
+					content: '';
+					display: inline-block;
+					width: var(--arrow-w);
+					height: var(--arrow-w);
+					background-color: unset;
+
+					margin-left: var(--arrow-ms);
+
+					background-image: url(../img/svg/chevron-down.svg);
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: contain;
+				}
+			}
+		}
+
+		.sub-menu{
+			@include mt();
+			transform-origin: top;
+			transform: scaleY(var(--sub-mnu-scale, 0));
+
+			padding: rem(12) rem(10);
+			background-color: $white;
+			list-style: none;
+			position: absolute;
+			top: 231%;
+			left: rem(-10);
+			width: auto;
+			height: auto;
+			display: block;
+
+			.menu-item{
+				margin-bottom: rem(3);
+				display: block;
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+			a{
+				padding: rem(8);
+				white-space: nowrap;
+				text-align: left;
+				color: $body-color;
+				&:hover {
+					color: rgba(77,184,72,1) ;
+				}
+			}
+		}
+	}
 	@include media-breakpoint-up(md) {}
 
 	@include media-breakpoint-up(sm) {}

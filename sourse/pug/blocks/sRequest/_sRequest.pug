@@ -1,0 +1,188 @@
+mixin sRequest(data)
+	// start sRequest
+	+b.SECTION.sRequest.section#sRequest&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Заявка на участие
+				p Для получения информации об&nbsp;участии в&nbsp;выставке БАД-EXPO, пожалуйста, заполните электронную форму. Наши специалисты свяжутся с&nbsp;Вами.
+			.overflow-hidden
+				.overflow-x
+					table.stands-prices
+						thead
+							tr
+								th Наименование услуги
+								th Состав услуги
+								th Стоимость, руб
+								th.w-min Ед. изм.
+								th Кол-во
+								th Наценка, %
+								th Итого, руб
+						tbody
+							tr.green
+								td(colspan='7') Обязательные услуги
+							tr
+								td Регистрационный взнос (обязательно)
+								td Информационная полоса об участнике в каталоге формата А5
+									sup.blue-text.footnote *
+								td.text-center.price
+									input.price-input(type='text' value='15000' readonly='')
+								td.text-center шт.
+								td.empty-bg
+									input.table-input(type='number' step='any' min='0' name='quantity-contribution' value='' data-validate='' data-qty='')
+								td.empty-bg  -
+								td.empty-bg
+									input.summary-row(type='text' name='summ-contribution' value='' readonly='' data-result='')
+							tr.odd
+								td Оборудованный стенд
+								td Стены, столы, стулья, фризовая надпись, электричество, освещение, уборка
+								td.text-center.price
+									input.price-input(type='text' value='13900' readonly='')
+								td.text-center м
+									sup 2
+								td.empty-bg
+									input.table-input(type='number' step='any' min='0' name='quantity-area' value='' data-qty='')
+								td.empty-bg
+									input(type='number' name='discount' step='any' min='0' value='')
+								td.empty-bg
+									input.summary-row(type='text' name='summ-area' value='' readonly='' data-result='')
+							tr.wight
+								td(colspan='7') или
+							tr.odd
+								td Рабочее место
+								td Стена, стол, 3 стула, фризовая надпись, электричество, освещение, уборка
+								td.text-center.price
+									input.price-input(type='text' value='27900' readonly='')
+								td.text-center шт.
+								td.empty-bg
+									input.table-input(type='number' step='any' min='0' name='quantity-workplace' value='' data-qty='')
+								td.empty-bg  -
+								td.empty-bg
+									input.summary-row(type='text' name='summ-workplace' value='' readonly='' data-result='')
+							tr.green
+								td(colspan='7') Дополнительные услуги
+							tr.odd
+								td Презентация
+								td Презентация со сцены 15 минут, зал на 200 человек
+								td.text-center.price
+									input.price-input(type='text' value='12000' readonly='')
+								td.text-center шт.
+								td.empty-bg
+									input.table-input(type='number' step='any' min='0' name='quantity-presentation' value='' data-qty='')
+								td.empty-bg  -
+								td.empty-bg
+									input.summary-row(type='text' name='summ-presentation' value='' readonly='' data-result='')
+							tr
+								td Брендирование стенда
+								td
+									| Печать и установка полноцветного тканевого баннера
+									br
+									| (макет от участника)
+									sup.blue-text.footnote **
+								td.text-center.price
+									input.price-input(type='text' value='2900' readonly='')
+								td.text-center
+									| м
+									sup 2
+								td.empty-bg
+									input.table-input(type='number' step='any' min='0' name='quantity-branding' value='' data-qty='')
+								td.empty-bg  -
+								td.empty-bg
+									input.summary-row(type='text' name='summ-branding' value='' readonly='' data-result='')
+							tr.odd
+								td(rowspan='7') Дополнительное оборудование	
+								td Витрина стеклянная 915х400х2650 мм
+								td.text-center.price
+									input.price-input(type='text' value='9000' readonly='')
+								td.text-center шт.
+								td.empty-bg
+									input.table-input(type='number' step='any' min='0' name='quantity-equipment' value='' data-qty='')
+								td.empty-bg  -
+								td.empty-bg
+									input.summary-row(type='text' name='summ-equipment' value='' readonly='' data-result='')
+							tr.odd
+								td.text-left Тумба стеклянная 915х400х990 мм
+								td.text-center.price
+									input.price-input(type='text' value='6500' readonly='')
+								td.text-center шт.
+								td.empty-bg
+									input.table-input(type='number' step='any' min='0' name='quantity-glass-tumba' value='' data-qty='')
+								td.empty-bg  -
+								td.empty-bg
+									input.summary-row(type='text' name='summ-glass-tumba' value='' readonly='' data-result='')
+							tr.odd
+								td.text-left Кабина закрытая с дверью-гармошка 920х920х2650 мм
+								td.text-center.price
+									input.price-input(type='text' value='2900' readonly='')
+								td.text-center шт.
+								td.empty-bg
+									input.table-input(type='number' step='any' min='0' name='quantity-cabin' value='' data-qty='')
+								td.empty-bg  -
+								td.empty-bg
+									input.summary-row(type='text' name='summ-cabin' value='' readonly='' data-result='')
+							tr.odd
+								td.text-left Полка деревянная 900х200 мм
+								td.text-center.price
+									input.price-input(type='text' value='300' readonly='')
+								td.text-center шт.
+								td.empty-bg
+									input.table-input(type='number' step='any' min='0' name='quantity-shelf-900x200' value='' data-qty='')
+								td.empty-bg  -
+								td.empty-bg
+									input.summary-row(type='text' name='summ-shelf-900x200' value='' readonly='' data-result='')
+							tr.odd
+								td.text-left Полка деревянная 1200х200 мм
+								td.text-center.price
+									input.price-input(type='text' value='400' readonly='')
+								td.text-center шт.
+								td.empty-bg
+									input.table-input(type='number' step='any' min='0' name='quantity-shelf-1200x200' value='' data-qty='')
+								td.empty-bg  -
+								td.empty-bg
+									input.summary-row(type='text' name='summ-shelf-1200x200' value='' readonly='' data-result='')
+							tr.odd
+								td.text-left Полка деревянная 1800х200 мм
+								td.text-center.price
+									input.price-input(type='text' value='500' readonly='')
+								td.text-center шт.
+								td.empty-bg
+									input.table-input(type='number' step='any' min='0' name='quantity-shelf-1800x200' value='' data-qty='')
+								td.empty-bg  -
+								td.empty-bg
+									input.summary-row(type='text' name='summ-shelf-1800x200' value='' readonly='' data-result='')
+							tr.odd
+								td.text-left Интернет-провод
+								td.text-center.price
+									input.price-input(type='text' value='7000' readonly='')
+								td.text-center шт.
+								td.empty-bg
+									input.table-input(type='number' step='any' min='0' name='quantity-utp' value='' data-qty='')
+								td.empty-bg  -
+								td.empty-bg
+									input.summary-row(type='text' name='summ-utp' value='' readonly='' data-result='')
+							tr
+								td
+									| Питание для Экспонентов
+									br
+									| (все включено)
+								td Чай, кофе, сок, вода, куриный бульон, пирожки и сэндвичи в ассортименте
+								td.text-center.price
+									input.price-input(type='text' value='1900' readonly='')
+								td.text-center
+									| м
+									sup 2
+								td.empty-bg
+									input.table-input(type='number' step='any' min='0' name='quantity-nutrition' value='' data-qty='')
+								td.empty-bg  -
+								td.empty-bg
+									input.summary-row(type='text' name='summ-nutrition' value='' readonly='' data-result='')
+				.total.d-flex.justify-content-end.align-items-center
+					p ИТОГО, СТОИМОСТЬ УЧАСТИЯ:
+					input.input-total(type='text' name='total' value='' readonly='' data-total='')
+				.footnotes-text
+					p.mb-1
+						b *
+						| В указанную стоимость не включается НДС в связи с применением Организатором упрощенной системы бухгалтерского учета и налогообложения
+					p
+						b **
+						| На угловой стенд действует наценка 5%, стенд-полуостров – 7%, стенды № 02-1, 02-2, 03-1, 03-2, 04, 05, 06, 44 – 10%
+	// end sRequest

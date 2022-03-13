@@ -22,6 +22,7 @@ include ../blocks/footer/_footer.pug
 //- include ../blocks/sProgram/_sProgram.pug
 include ../blocks/sExhibitionPlan/_sExhibitionPlan.pug
 include ../blocks/sExhibitionSlider/_sExhibitionSlider.pug
+include ../blocks/sRequest/_sRequest.pug
 
 block variables
 	- let  mainPage= 'main-page' 
@@ -41,6 +42,8 @@ block pagecontent
 		+breadcrumb('Главная', 'Контакты')
 	+sExhibitionPlan()
 	+sExhibitionSlider()
+	+sRequest()
+	+sForm()
 	//- +headerBlock
 	//- +sAbout()
 	//- +sOurGoals()

@@ -1,33 +1,36 @@
 -
-	var nav= { 
-		"Экспонентам":"#",
-		"Посетителям":"#",
+	var nav= {
 		"Экспоненты":"#",
 		"Программа":"#" ,
 		"Контакты":"#",
 	}
 -
 
-//- -
-//- 	var subnav = {
-//- 		"Экспонентам": "#",
-//- 		"Почему стоит участвовать": "#",
-//- 		"План выставки": "#",
-//- 		"Заявка на участие": "#",
-//- 		"Маркетинговые услуги": "#",
-//- 		"Спонсорские пакеты": "#",
-//- 	}
-//- -
+-
+	var subnav = {
+		"Экспонентам": "#",
+		"Почему стоит участвовать": "#",
+		"План выставки": "#",
+		"Заявка на участие": "#",
+		"Маркетинговые услуги": "#",
+		"Спонсорские пакеты": "#",
+	}
+-
 
 mixin mnu()
 	ul.menu(itemscope itemtype="http://schema.org/SiteNavigationElement")
-		each linkPatch, linkName in nav
-			li.menu-item(itemprop="item" ): a(href= linkPatch itemprop="url")= linkName
 		if subnav
 			li.menu-item.menu-item-has-children
-				a(href="#" itemprop="url") О нас
+				a(href="#" itemprop="url") Экспонентам
 				ul.sub-menu
 					each sublinkPatch, sublinkName in subnav
 						li.menu-item(itemprop="item" ): a(href= sublinkPatch itemprop="url")= sublinkName
+			li.menu-item.menu-item-has-children
+				a(href="#" itemprop="url") Посетителям
+				ul.sub-menu
+					each sublinkPatch, sublinkName in subnav
+						li.menu-item(itemprop="item" ): a(href= sublinkPatch itemprop="url")= sublinkName
+		each linkPatch, linkName in nav
+			li.menu-item(itemprop="item" ): a(href= linkPatch itemprop="url")= linkName
 
 //- menu

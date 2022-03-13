@@ -2,11 +2,40 @@ mixin sForm()
 	// start sForm
 	+b.SECTION.sForm.section#sForm&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sForm
-				h2 sForm
-				h2 sForm
-				h2 sForm
-				
-			.row
+			+b.section-title
+				h4 УЧАСТНИК/ПЛАТЕЛЬЩИК (реквизиты указываются в&nbsp;соответствии с&nbsp;карточкой предприятия)
+				+form-wrap()
+					.row
+						.col-lg-6
+							+e.head-wrap
+								h4 Вы выбрали стенд №
+								+input('')
+							+input('в соответствии с учредительными документами', 'text', 'Название компании')
+							+input('', 'text', 'Юридический адрес')
+							+input('', 'text', 'Фактический адрес')
+							.row
+								.col-md-6 
+									+input('', 'tel', 'Телефон')
+								.col-md-6
+									+input('mail', 'mail', 'Email')
+							+input('', 'text', 'Контактное лицо')
+							+input('Должностное лицо, имеющее право подписи первичных документов', 'text', 'ФИО руководителя')
+							+input('', 'textarea', 'Примечание')
+						.col-lg-6
+							.row
+								.col-md-6 
+									+input('', 'text', 'ИНН')
+								.col-md-6
+									+input('', 'text', 'КПП')
+							.row
+								.col-md-6 
+									+input('', 'text', 'ОКПО')
+								.col-md-6
+									+input('', 'text', 'ОГРН')
+							+input('', 'text', 'Р/с')
+							+input('', 'text', 'Наименование банка')
+							+input('', 'text', 'К/c')
+							+input('', 'text', 'БИК')
+							+policy2()
+							button.btn(type="submit") Отправить
 	// end sForm

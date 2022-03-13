@@ -11,6 +11,7 @@
 	position: relative;
 	margin-bottom: 0;
 	max-width: 100%;
+	// z-index: 10000;
 	li{
 		
 		// margin-left: 0;
@@ -87,7 +88,7 @@
 
 	.menu-mobile {
 		position: fixed !important;
-		z-index: 999;
+		z-index: 10000;
 		max-width: 85%;
 		height: calc(var(--vh, 1vh) * 100);
 		width: 280px;

@@ -1,7 +1,70 @@
 
 	// start .sForm
 	.sForm {
-		 
+	padding-top: 0;
+	.form-wrap {
+		form {
+			& > .row {
+				--bs-gutter-x: #{rem(30)};
+			}
+		}
+		&__head-wrap {
+			display: flex;
+			// margin-bottom: rem(10);
+			h4 {
+				margin-right: rem(15);
+			}
+			.form-wrap__input {
+				max-width: rem(70);
+				padding: rem(10) 0;
+			}
+		}
+		&__input {
+			max-width: rem(490);
+			&::placeholder {
+				font-size: rem(16);
+			}
+			&-title {
+				font-weight: 700;
+				font-size: rem(18);
+				margin-bottom: 5px;
+			}
+		}
+		&__input-wrap {
+			&:not(:last-child) {
+				margin-bottom: rem(10);
+			}
+		}
+		.row {
+			--bs-gutter-x: 2px;
+		}
+		textarea {
+			min-height: 170px;
+			resize: vertical;
+		}
+		&__policy {
+			margin-top: rem(32);
+			margin-bottom: rem(32);
+			input {
+				margin-top: 7px;
+				width: 20px;
+				height: 20px;
+			}
+			small {
+				font-size: rem(14.4);
+				font-weight: 700;
+			}
+		}
+		button {
+			background-color: #ffe652;
+			padding: 5px 10px;
+			&:hover {
+				color: #2fbe2d;
+				background-color: rgba(134,205,245,1);
+				border-color: rgba(134,205,245,1);
+			}
+		}
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
