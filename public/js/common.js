@@ -443,14 +443,14 @@ function eventHandler() {
 		}
 	});
 
-	$('.free-dd-head-js, li.menu-item-has-children').click(function () {
-		event.preventDefault();
-		let content = this.parentElement.querySelector('.free-dd-content-js') || this.querySelector('.sub-menu');
-		$(this.parentElement).toggleClass('active');
-		$(content).slideToggle(function () {
-			$(this).toggleClass('active');
-		});
-	});
+	$(".menu-item-has-children ").each(function(){
+		$(this).append('<div class="toggle-l"></div>');
+	})
+
+	$('.menu-item-has-children').on('click', '.toggle-l', function(){
+		$(this).prev().slideToggle()
+		return false;
+	})
 };
 if (document.readyState !== 'loading') {
 	eventHandler();
