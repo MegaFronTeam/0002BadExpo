@@ -34,7 +34,7 @@
 
 .toggle-menu-mobile {
 	--h: #{em(2)};
-	--color: #{$primary};
+	--color: #{rgba(134,205,245,1)};
 	--position: calc(var(--h) * 2);
 	&.on span {
 		--color: transparent;

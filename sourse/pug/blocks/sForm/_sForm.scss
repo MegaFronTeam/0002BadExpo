@@ -2,11 +2,17 @@
 	// start .sForm
 	.sForm {
 	padding-top: 0;
+	.section-title {
+		margin-bottom: rem(20);
+	}
 	.form-wrap {
 		form {
 			& > .row {
 				--bs-gutter-x: #{rem(30)};
 			}
+		}
+		&__row {
+			margin-bottom: rem(10);
 		}
 		&__head-wrap {
 			display: flex;

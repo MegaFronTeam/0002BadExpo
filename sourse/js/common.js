@@ -257,7 +257,7 @@ const JSCCommon = {
 		for (let parent of parents) {
 			if (parent) {
 				// childHeads, kind of funny))
-				let ChildHeads = parent.querySelectorAll('.dd-head-js:not(.disabled)');
+				let ChildHeads = parent.querySelectorAll('.dd-head-js:not(.disabled), .menu-item-has-children');
 				$(ChildHeads).click(function () {
 					let clickedHead = this;
 
@@ -441,6 +441,15 @@ function eventHandler() {
 		thumbs: {
 			swiper: sExhibitionSliderThumbs,
 		}
+	});
+
+	$('.free-dd-head-js, li.menu-item-has-children').click(function () {
+		event.preventDefault();
+		let content = this.parentElement.querySelector('.free-dd-content-js') || this.querySelector('.sub-menu');
+		$(this.parentElement).toggleClass('active');
+		$(content).slideToggle(function () {
+			$(this).toggleClass('active');
+		});
 	});
 };
 if (document.readyState !== 'loading') {

@@ -5,18 +5,24 @@
 	--sPB: #{rem(8)};
 	background-color: $cyan;
 	color: $white;
-	display: none;
+	// display: none;
 	@include media-breakpoint-up(md) {
 		display: block;
 	}
 	&__row {
 		align-items: center;
 		--bs-gutter-x: #{rem(82)};
+		@include media-breakpoint-down(md) {
+			--bs-gutter-x: #{rem(20)};
+		}
 	}
 	p {
 		margin-bottom: 0;
 		font-weight: 700;
 		font-size: rem(14);
+		@include media-breakpoint-down(sm) {
+			font-size: 9px;
+		}
 	}
 	a {
 		font-size: rem(14);
@@ -32,10 +38,16 @@
 	&__wrap {
 		display: flex;
 		align-items: center;
+		@include media-breakpoint-down(md) {
+			justify-content: end;
+		}
 	}
 	.icon-location-dot-solid {
 		font-size: rem(14);
 		margin-right: rem(5);
+		@include media-breakpoint-down(sm) {
+			font-size: 9px;
+		}
 	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}

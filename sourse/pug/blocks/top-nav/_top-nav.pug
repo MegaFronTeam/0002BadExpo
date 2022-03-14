@@ -31,10 +31,11 @@ mixin top-nav()
 						.menu-mobile__inner
 							+menu-toggle()
 							+mnu()
-							button.btn.d-lg-none Зарегистрироваться
+							//- button.btn.d-lg-none Зарегистрироваться
 				.col-auto.d-none.d-lg-block
-					button.btn.btn-primary Бронь стенда
-					button.btn.btn-primary Регистрация
+					+e.link-wrap
+						a(href="#").btn.btn-primary Бронь стенда
+						a(href="#").btn.btn-primary Регистрация
 				.col-auto.d-lg-none
 					+menu-toggle()
 	// end top-nav

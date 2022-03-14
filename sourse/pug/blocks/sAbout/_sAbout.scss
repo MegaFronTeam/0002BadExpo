@@ -28,10 +28,8 @@
 			@include media-breakpoint-up(lg) {
 				font-size: rem(24);
 			}
-			span {
-				font-weight: 700;
+			strong {
 				color: #4db848;
-				margin-bottom: 0;
 			}
 		}
 	}

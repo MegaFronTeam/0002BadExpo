@@ -7,15 +7,27 @@
 	// min-height: calc(var(--vh, 1vh) * 100);
 	// background-image: url(../img);
 	// background-color: #000000;
+	@include media-breakpoint-down(lg) {
+		height: calc(100vh - 97px);
+		display: flex;
+    align-items: center;
+	}
+	@include media-breakpoint-down(md) {
+		height: calc(100vh - 58px);
+	}
 	.section-title {
 		margin-bottom: rem(21.6);
+		text-align: center;
 		@include media-breakpoint-up(xl) {
 			margin-left: 15px;
+		}
+		span {
+			color: #fb1f07;
 		}
 	}
 	h1 {
 		@include rfs(32px);
-		max-width: rem(752);
+		// max-width: rem(752);
 		font-weight: 700;
 		margin-bottom: rem(20);
 	}
@@ -45,7 +57,7 @@
 	button {
 		width: 100%;
 		max-width: rem(247);
-		background-color: $yellow;
+		background-color: #ffe652;
 		margin-left: auto;
     margin-right: auto;
     display: block;
