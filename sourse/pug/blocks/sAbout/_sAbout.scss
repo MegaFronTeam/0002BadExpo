@@ -46,18 +46,18 @@
 				margin-bottom: rem(22);
 			}
 		}
+		.pills {
+			position: absolute;
+			z-index: -1;
+			bottom: rem(80);
+			right: rem(11);
+		}
 		p {
 			font-size: rem(18);
 			margin-bottom: 0;
 			margin-left: rem(20);
 			line-height: 1.2em;
 			color: $gray-700;
-		}
-		& > img {
-			position: absolute;
-			z-index: -1;
-			bottom: rem(80);
-			right: rem(11);
 		}
 	}
 	&__pills, &__pills2{
