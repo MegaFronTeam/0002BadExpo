@@ -51,7 +51,8 @@
 			width: 100%;
 		}
 		& > .menu-item{
-			--menu-item-me: 1.3rem;
+			// --menu-item-me: 1.3rem;
+			--menu-item-me: 0;
 			--arrow-w: #{rem(10)};
 			--arrow-ms: #{rem(10)};
 
